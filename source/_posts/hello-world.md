@@ -15,6 +15,9 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 $ hexo new "My New Post"
 ```
 
+TeX Maybe? 
+$$F[x] / x^2+1$$
+
 More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server

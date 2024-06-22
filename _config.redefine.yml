@@ -23,11 +23,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/S3.svg
+  favicon: images\S3.svg
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/S3.svg
+  avatar: images\S3.svg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -224,11 +224,11 @@ navbar:
 home:
   # Sidebar settings
   sidebar:
-    enable: true # Whether to enable sidebar
+    enable: false # Whether to enable sidebar
     position: right # Sidebar position. left, right
-    first_item: menu # First item in sidebar. menu, info
-    announcement: # Announcement text
-    show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
+    first_item: info # First item in sidebar. menu, info
+    announcement: Now in 3D! # Announcement text
+    show_on_mobile: false # Whether to show sidebar navigation on mobile sheet menu
     links:
       # Archives: 
       #   path: /archives 
@@ -244,11 +244,11 @@ home:
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article categories visibility
   categories:
-    enable: true  # Whether to enable
+    enable: false  # Whether to enable
     limit: 3 # Max number of categories to display
   # Article tags visibility
   tags:
-    enable: true  # Whether to enable
+    enable: false  # Whether to enable
     limit: 3  # Max number of tags to display
 # HOME PAGE ARTICLE SETTINGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -373,7 +373,7 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: #'<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2024/06/21 11:45:14
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
