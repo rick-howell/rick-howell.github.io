@@ -9,7 +9,7 @@ description: ''
 keywords:
 author: Rick Howell
 language: en
-timezone: ''
+timezone: 'America/New_York|EST EDT|50 40|0101|1Lz50 1zb0 Op0'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
