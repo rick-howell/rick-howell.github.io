@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Rick Howell
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Rick Howell
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://rick-howell.github.io/project
+url: http://rick-howell.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yun
+theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
