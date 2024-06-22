@@ -9,7 +9,7 @@ description: ''
 keywords:
 author: Rick Howell
 language: en
-timezone: 'America/New_York|EST EDT|50 40|0101|1Lz50 1zb0 Op0'
+timezone: 'America/New_York'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -65,7 +65,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 
 category_map:
 tag_map:
 
