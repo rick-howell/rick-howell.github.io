@@ -3,7 +3,7 @@ layout: post
 title: Complex Plotting
 date: 2024-06-23 23:35 -0400
 categories: math
-thumbnail: img/complexlog.png
+thumbnail: img/complexlog.webp
 ---
 
 ## The Main Bijection
