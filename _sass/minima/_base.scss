@@ -292,14 +292,62 @@ table {
 }
 
 .gallery-item {
-    flex: 1 0 21%; /* change this to control the size of the thumbnails */
+    flex: 1 0 150px; /* change this to control the size of the thumbnails */
     margin: 1.5%; /* change this to control the space between the thumbnails */
     overflow: hidden; /* this ensures that the images are cropped to fit the thumbnail size */
 }
 
 .gallery-item img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover; /* or 'contain' */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
+}
+
+@media (min-width: 1200px) {
+  .gallery-item { flex: 1 0 calc(25% - 3%); } /* 4 images per row */
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .gallery-item { flex: 1 0 calc(33.33% - 3%); } /* 3 images per row */
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .gallery-item { flex: 1 0 calc(50% - 3%); } /* 2 images per row */
+}
+
+@media (max-width: 599px) {
+  .gallery-item { flex: 1 0 calc(100% - 3%); } /* 1 image per row */
+}
+
+.gallery-item a {
+  position: relative;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
