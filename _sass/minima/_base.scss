@@ -279,3 +279,27 @@ table {
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
+
+
+/**
+  * Responsive embeds
+  */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex: 1 0 21%; /* change this to control the size of the thumbnails */
+    margin: 1.5%; /* change this to control the space between the thumbnails */
+    overflow: hidden; /* this ensures that the images are cropped to fit the thumbnail size */
+}
+
+.gallery-item img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover; /* or 'contain' */
+  object-position: center;
+}
