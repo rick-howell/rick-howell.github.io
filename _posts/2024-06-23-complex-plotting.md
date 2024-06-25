@@ -86,7 +86,7 @@ cv2.waitKey(0)
 
 ```
 
-Doing this gives us the following result for $f(z) = log(z)$:
+Doing this gives us the following result for $$f(z) = log(z)$$:
 ![log](/img/logwithmag.webp)
 
 
