@@ -162,4 +162,3 @@ Here are some examples of cool functions using domain coloring:
 
 ### Third roots of unity
 ![z^3 - 1 = 0](/img/3rootsofunity.webp)
-
