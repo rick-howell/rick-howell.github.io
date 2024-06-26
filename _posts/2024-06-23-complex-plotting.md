@@ -155,10 +155,16 @@ cv2.waitKey(0)
 
 ```
 
-Here are some examples of cool functions using domain coloring:
+## Gallery
 
-### f(z) = log(z)
+### $$f(z) = \sum z^4 + z$$
+![mandelbrot4](/img/mandle.webp)
+
+### $$f(z) = \log(z)$$
 ![log(z)](/img/clog.webp)
 
-### Third roots of unity
-![z^3 - 1 = 0](/img/3rootsofunity.webp)
+### $$z^3 - 1 = 0$$
+![Third roots of unity](/img/3rootsofunity.webp)
+
+### $$f(z) = \sum z^3 + z$$
+![alt text](/img/mandel3.webp)
