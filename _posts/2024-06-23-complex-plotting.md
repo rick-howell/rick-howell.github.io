@@ -87,20 +87,19 @@ cv2.waitKey(0)
 
 ```
 
-Doing this gives us the following result for $$f(z) = log(z)$$:
+\
+Doing this gives us the following result for $$f(z) = log(z)$$
 ![log](/img/logwithmag.webp)
 
 
-This is mathematically accurate, and entertaining in it's own right. 
-
-That being said, I find myself much more intrigued by removing the magnitude all together, and just focusing on plotting the angle.
+This is mathematically accurate, and entertaining in it's own right. But that being said, there's nothing to say your representation of the function has to be *correct*, or include all available information. 
 
 
 ## Plots with only the angle
 
-Technically we lose some information here, but for the sake of beauty, it isn't bad to do so.
+Let's explore different ways of coloring the domain.
 
-Here is a new example script:
+Here is a new example script for the colorful plot shown in the thumbnail:
 
 ```
 import numpy as np
@@ -122,7 +121,6 @@ Z = X + 1j*Y
 
 # Define our function
 def f(z):
-    # return z**3 - 1
     return np.log(z)
     
 
