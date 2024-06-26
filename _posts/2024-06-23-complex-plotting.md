@@ -19,11 +19,13 @@ $$
 $$
 
 
-The obvious question then, how do we represent functions from 
-$$\mathbb{C} \rightarrow \mathbb{C}$$
-when we need two parameters to represent the input, and two more for the output?
+Let's take an arbitrary function, $$f: \mathbb{C} \rightarrow \mathbb{C}$$
 
-We just make the inputs the regular complex plane, with the vertical axis corresponding to the imaginary part. Then, using HSL color space, we can make the hue correspond to the angle of the output at each point, and the lightness correspond to the magnitude:
+Since each complex coordinate needs two real values to represent it, that effectively makes viewing it a 4 dimensional problem... 
+
+One way to overcome this is to just make the inputs the regular complex plane, with the vertical axis corresponding to the imaginary part. Then, using HSL color space, we can make the hue correspond to the angle of the output at each point, and the lightness correspond to the magnitude:
+
+Putting it all together, here's a simple script we can use.
 
 ```
 import numpy as np
@@ -88,14 +90,43 @@ cv2.waitKey(0)
 ```
 
 \
-Doing this gives us the following result for $$f(z) = log(z)$$
+Doing this gives us the following result for $$f(z) = \log(z)$$
 ![log](/img/logwithmag.webp)
 
 
 This is mathematically accurate, and entertaining in it's own right. But that being said, there's nothing to say your representation of the function has to be *correct*, or include all available information. 
 
+\
+Before we move on however, let's actually digest this picture.
 
-## Plots with only the angle
+Note the 'black hole' in the middle. This should be intuitive from the many times we've encountered log defined over $$\mathbb{R}$$, but even  $$\forall z \in \mathbb{C}$$, $$\nexists z : \exp(z) = 0$$. 
+
+\
+Now what's with the line through the negative real axis?
+
+We call this a *branch cut*, and to see why it exists, we can look at each $$z \in \mathbb{C}$$ in polar form as $$z = re^{i\theta}$$, and then we get $$\log(z) = \log(r) + i\theta$$.
+
+Remembering that $$\theta = 2\pi n\theta$$, $$\forall n \in \mathbb{Z}$$, we can compute:
+
+$$
+\begin{aligned}
+\log(-1) = \log(1) + i\pi = i\pi = 3i\pi = 5i\pi = \dots = (2n+1)i\pi \\
+\end{aligned}
+$$
+
+So let's fix $$r$$, and put $$\theta \in (-\pi, \pi]$$. We see 
+
+$$
+\begin{aligned}
+\lim_{\theta \rightarrow \pi^-} &= i\pi \\
+
+\lim_{\theta \rightarrow -\pi^+} &= -i\pi \\
+\end{aligned}
+$$
+
+The difference in color then is the angle difference as we approach $$\pi$$ from either side of the cut!
+
+## Plotting With Style
 
 Let's explore different ways of coloring the domain.
 
