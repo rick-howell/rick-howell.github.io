@@ -2,6 +2,7 @@
 layout: post
 title: Complex Plotting
 date: 2024-06-23 23:35 -0400
+permalink: /cplxplt/
 categories: math
 thumbnail: img/clog.webp
 ---
@@ -167,4 +168,4 @@ cv2.waitKey(0)
 ![Third roots of unity](/img/3rootsofunity.webp)
 
 ### $$f(z) = \sum z^3 + z$$
-![alt text](/img/mandel3.webp)
+![mandelbrot3](/img/mandel3.webp)
