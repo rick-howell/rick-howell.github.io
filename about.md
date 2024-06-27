@@ -1,18 +1,13 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
+profile: '/img/profileport.jpg'
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Rick Howell
 
 
-[jekyll-organization]: https://github.com/jekyll
+Welcome to a small [corner](https://en.wikipedia.org//wiki/Weierstrass_function) of the internet where I can show off some of the interesting things I stumble across in the wild. 
+
+My academic background is in mathematics and computer science. On the side however, I'm an artist and musician. Because of this, I oft find myself caught admiring intersection. I guess you're here to do the same...

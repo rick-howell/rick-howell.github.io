@@ -368,3 +368,19 @@ table {
   width: 100%;
   height: 100%;
 }
+
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-item {
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+      flex-direction: row;
+  }
+}

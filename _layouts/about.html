@@ -1,0 +1,25 @@
+---
+layout: base
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="about-container">
+    <div class="about-item">
+        <div class="post-content">
+            <img src="{{ page.profile }}" alt="Author"/>
+        </div>
+    </div>
+    <div class="about-item">
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+
+
+</article>
