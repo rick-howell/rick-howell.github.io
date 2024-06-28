@@ -7,6 +7,8 @@ categories: math
 thumbnail: img/clog.webp
 ---
 
+A [complex](https://mathworld.wolfram.com/ComplexNumber.html) function is any function $$f: A \rightarrow \mathbb{C}$$, for some domain $$A$$. There are many [exciting things](https://www.britannica.com/science/fundamental-theorem-of-algebra) to talk about with complex functions, and maybe we'll get to that in the future, but today we're just going to try and figure out how to actually *look* at them. 
+
 ## The Main Bijection
 
 When looking to plot complex functions, we'll use a fun and simple fact:
@@ -19,11 +21,12 @@ $$
 $$
 
 
-Let's take an arbitrary function, $$f: \mathbb{C} \rightarrow \mathbb{C}$$
+So looking at an arbitrary function, $$f: \mathbb{C} \rightarrow \mathbb{C}$$, we notice each complex coordinate needs two real values to represent it, and so that effectively makes viewing our [graph](https://en.wikipedia.org/wiki/Graph_of_a_function) a 4 dimensional problem... 
 
-Since each complex coordinate needs two real values to represent it, that effectively makes viewing it a 4 dimensional problem... 
+\
+One way to overcome this is to make the inputs the regular complex plane, with the vertical axis corresponding to the imaginary part.
 
-One way to overcome this is to just make the inputs the regular complex plane, with the vertical axis corresponding to the imaginary part. Then, using HSL color space, we can make the hue correspond to the angle of the output at each point, and the lightness correspond to the magnitude:
+ Then, using HSL color space, we can make the hue correspond to the angle of the output at each point, and the lightness correspond to the magnitude.
 
 Putting it all together, here's a simple script we can use.
 
@@ -99,7 +102,11 @@ This is mathematically accurate, and entertaining in it's own right. But that be
 \
 Before we move on however, let's actually digest this picture.
 
-Note the 'black hole' in the middle. This should be intuitive from the many times we've encountered log defined over $$\mathbb{R}$$, but even  $$\forall z \in \mathbb{C}$$, $$\nexists z : \exp(z) = 0$$. 
+Note the 'black hole' in the middle. This should be intuitive from the many times we've encountered log defined over $$\mathbb{R}$$, but often our intuition fails to hold when we start climbing into new domains.
+
+We first make note though that $$\forall z \in \mathbb{C}$$, $$\nexists z : \exp(z) = 0$$, and so we'll color the point at $$z=0$$ black.
+
+Then remembering how $$\log(x)$$ from $$\mathbb{R_+} \rightarrow \mathbb{R}$$ is strictly decreasing as we approach zero, we can fix the imaginary component and see we are lessening in magnitude the closer we get towards the center.
 
 \
 Now what's with the line through the negative real axis?
